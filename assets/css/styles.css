@@ -1,0 +1,235 @@
+/* Author: Jayden Nguyen, 101363755 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+  list-style: none;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 10px 8px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: auto;
+  margin-left: 20px;
+  filter: contrast(150%);
+}
+.fa:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background-image: linear-gradient(
+    to top right,
+    #feda77,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  );
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+.container .flex_container {
+  display: flex;
+}
+.container .flex_container .telephone {
+  margin-right: 20px;
+  /* text-align: center; */
+  margin: auto;
+  margin-right: 20px;
+  /* margin-left: 20px; */
+}
+.container .flex_container .telephone span {
+  color: red;
+}
+header {
+  box-shadow: 0 10px 10px #b2b2b2;
+}
+#logo {
+  filter: contrast(200%);
+  margin-top: 3px;
+}
+.container_nav .top_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.container_nav .top_wrapper .flex_container_nav {
+  display: flex;
+}
+
+#navbar .container_2 {
+  padding: 4px 30px;
+  padding-top: 10px;
+}
+
+#home {
+  border-radius: 5px;
+  background-color: #55acee;
+  cursor: pointer;
+  height: 35px;
+  margin-top: 19px;
+}
+#home_link {
+  color: white;
+}
+#features,
+#testimonial {
+  margin: auto;
+}
+/* #product_picture {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  filter: contrast(100%);
+} */
+
+/* /////////////////Bottom showcase////////////////// */
+#showcase {
+  background: url("../img/product-relate-pictures/boxed-water-is-better.jpg")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 600px;
+}
+#showcase .container_showcase .showcase_content {
+  color: black;
+
+  padding-top: 160px;
+  width: 100%;
+  margin-left: 120px;
+}
+#showcase .showcase_content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  font-family: "Sofia", sans-serif;
+}
+#showcase .container_showcase div + p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+.lead {
+  font-size: 20px;
+  font-family: "Audiowide", sans-serif;
+}
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Audiowide", sans-serif;
+}
+.btn:hover {
+  background: lightskyblue;
+  color: #333;
+}
+section .fas {
+  color: lightskyblue;
+  font-size: 80px;
+}
+section .far {
+  color: lightskyblue;
+  font-size: 80px;
+}
+/* section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  margin-top: 50px;
+} */
+section {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+section .box {
+  text-align: center;
+  padding: 1.5rem 2rem;
+}
+section h3,
+p {
+  font-family: Sofia, sans-serif;
+}
+article h3 {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Sofia", sans-serif;
+  font-size: 40px;
+}
+article img {
+  border-radius: 50%;
+}
+article .customers_reviews {
+  /* display: flex;
+  justify-content: center; */
+
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+article .customers_reviews .name {
+  font-size: 30px;
+  font-family: "Sofia", sans-serif;
+
+  margin-bottom: 5px;
+  color: lightskyblue;
+}
+
+article .customers_reviews .box_reviews {
+  border: lightskyblue 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  /* padding: 25px;
+  margin-right: 15px;
+  width: 30%; */
+}
+article .customers_reviews .box_reviews .jobs {
+  font-family: "Montserrat", sans-serif;
+}
+article .customers_reviews .box_reviews:last-child {
+  margin-right: 0;
+}
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media all and (max-width: 600px) {
+  #showcase {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
